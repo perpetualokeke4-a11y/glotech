@@ -32,9 +32,9 @@ export default function HomePage() {
               Computer
             </p>
 
-            <h1 className="mb-6 text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
+           <h1 className="mb-6 text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
               POWER YOUR PERFORMANCE
-            </h1>
+           </h1>
 
             <p className="mb-8 text-lg text-gray-300">
               Explore high quality computers and accessories for gaming,

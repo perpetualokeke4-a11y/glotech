@@ -82,8 +82,9 @@ export default function Footer() {
 
           <ul className="space-y-3 text-gray-400 text-sm">
             <li>Email: info@techsolar.com</li>
-            <li>Phone: +234 000 000 0000</li>
-            <li>Lagos, Nigeria</li>
+            <li>Phone: 08068911221</li>
+            <li>Phone: 08097187404</li>
+            <li>Abuja,Lagos, Nigeria</li>
           </ul>
         </div>
       </div>
