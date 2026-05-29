@@ -1,9 +1,3 @@
-import { FaFacebook } from "react-icons/fa";
-import { IoLogoTiktok } from "react-icons/io5";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-
-
 
 // components/Footer.jsx
 
@@ -18,7 +12,7 @@ export default function Footer() {
         {/* Logo / About */}
         <div>
           <h1 className="text-2xl font-bold mb-4">
-            TechSolar
+            GlotechGlobal
           </h1>
 
           <p className="text-gray-400 text-sm leading-6">
@@ -48,18 +42,18 @@ export default function Footer() {
 
             <li>
               <Link href="/dashboard/solar-item" className="hover:text-yellow-400 transition">
-                Solar-Item
+                Solar-Items
               </Link>
             </li>
 
             <li>
               <Link href="/dashboard/location" className="hover:text-yellow-400 transition">
-                location
+                Location
               </Link>
             </li>
           </ul>
         </div>
-
+        
         {/* Services */}
         <div>
           <h2 className="text-lg font-semibold mb-4">
@@ -83,7 +77,7 @@ export default function Footer() {
           <ul className="space-y-3 text-gray-400 text-sm">
             <li>Email: info@techsolar.com</li>
             <li>Phone: 08068911221</li>
-            <li>Phone: 08097187404</li>
+            <li>Phone: 08131861215</li>
             <li>Abuja,Lagos, Nigeria</li>
           </ul>
         </div>

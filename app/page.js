@@ -1,19 +1,7 @@
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-white pt-24 text-black">
-      {/* Navbar */}
-      <nav className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-blue-600 px-4 py-4 text-white shadow-lg md:px-10 md:py-5">
-        <h1 className="text-2xl font-bold">GLOTECH GLOBAL</h1>
-
-        <ul className="hidden gap-8 font-semibold md:flex">
-          <li className="cursor-pointer hover:text-gray-200">Home</li>
-          <li className="cursor-pointer hover:text-gray-200">
-            Computer-Accessories
-          </li>
-          <li className="cursor-pointer hover:text-gray-200">Solar-Items</li>
-          <li className="cursor-pointer hover:text-gray-200">Location</li>
-        </ul>
-      </nav>
+      
 
       {/* Split Hero Section */}
       <section className="grid min-h-screen grid-cols-1 md:grid-cols-2">

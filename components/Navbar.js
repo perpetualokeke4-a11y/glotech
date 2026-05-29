@@ -1,47 +1,87 @@
- "use client"
 import Link from "next/link";
-import { useState } from "react";
-import { RiMenu3Fill } from "react-icons/ri";
 
-export function Navbar(){
-    const [dropDown,setDropDown] = useState(false);
+export default function Navbar() {
+  
+  return (
+    <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-blue-600/95 backdrop-blur-md shadow-xl">
 
-    const toggleMenu = ()=>{
-        setDropDown(!dropDown);
-    }
-    return(
-        <main className="bg-blue-500 shadow shadow-gray-300 w-full fixed z-3 top-0">
-            <div className="h-15 px-5 flex justify-between text- items-center">
-                <h1 className="text-3xl font-bold text-white">GLOTECH GLOBAL</h1>
-                <ul className=" text-white text-2xl  hidden md:flex  md:gap-8 md:text-lg md:font-semibold">
-                    <Link href="/auth/login"><li>Home</li></Link>
-                    <Link href="/dashboard/computer-accessories"><li>Computer-Accessories</li></Link>
-                    <Link href="/dashboard/solar-item"><li>Solar-Items</li></Link>
-                    <Link href="/dashboard/location"><li>Location</li></Link>
-                   
-                </ul>
-                 <div  className="block  md:hidden lg:hidden">
-                    <RiMenu3Fill onClick={toggleMenu} className="text-3xl text-white" />
-                 </div>
-            </div>
-            {dropDown && (
-            <div className="flex flex-col gap-3 justify-center items-center md:hidden">
-                <ul className="flex flex-col gap-5 text-sm text-white font-semibold">
-                    <Link href="/auth/login"><li>Home</li></Link>
-                    <Link href="/dashboard/computer-accessories"><li>Computer-Accessories</li></Link>
-                    <Link href="/dashboard/solar-item"><li>Solar-Items</li></Link>
-                    <Link href="/dashboard/location"><li>Location</li></Link>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 md:px-10 md:py-4">
 
-                    
-                </ul>
-                <Link href="/auth/login">
-                <div>
-                    <button className="w-15 h-9 text-white bg-black rounded-md cursor-pointer">Login</button>
-                </div>
-               </Link>
-            </div>
-            )}
+        {/* Logo */}
+        <div>
+          <h1 className="text-2xl font-extrabold tracking-wide text-white sm:text-3xl">
+            GLOTECH GLOBAL
+          </h1>
 
-        </main>
-    )
+          <p className="hidden text-xl font-bold text-blue-100 md:block">
+            Computer & Solar Limited
+          </p>
+        </div>
+
+        {/* Navigation Links */}
+        <ul className="hidden items-center gap-6 text-base font-semibold md:flex lg:gap-10 lg:text-lg">
+
+          {/* Home */}
+          <li>
+            <Link
+              href="/"
+              className="relative text-white transition hover:text-yellow-300"
+            >
+              Home
+            </Link>
+          </li>
+
+          {/* Computer */}
+          <li>
+            <Link
+              href="/dashboard/computer-accessories"
+              className="relative text-white transition hover:text-yellow-300"
+            >
+              Computer-Accessories
+            </Link>
+          </li>
+
+          {/* Solar */}
+          <li>
+            <Link
+              href="/dashboard/solar-item"
+              className="relative text-white transition hover:text-yellow-300"
+            >
+              Solar-Items
+            </Link>
+          </li>
+
+          {/* Location */}
+          <li>
+            <Link
+              href="/dashboard/location"
+              className="relative text-white transition hover:text-yellow-300"
+            >
+              Location
+            </Link>
+          </li>
+
+        </ul>
+
+        {/* Mobile Menu */}
+        <button className="text-white md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="h-8 w-8"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+      </div>
+    </nav>
+  );
 }

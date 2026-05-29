@@ -21,13 +21,13 @@ export default function HomePage() {
         <div className="text-black grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
-              name: 'Gaming Keyboard',
+              name: ' Keyboard',
               image:
                 'https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=1200&auto=format&fit=crop',
               
             },
             {
-              name: 'Wireless Mouse',
+              name: 'Wireless & wired Mouse',
               image:
                 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200&auto=format&fit=crop',
               
@@ -44,6 +44,27 @@ export default function HomePage() {
                 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=1200&auto=format&fit=crop',
               
             },
+            {
+              name: 'laptop batteries',
+              image:
+                'https://images.unsplash.com/photo-1721333089496-caee7da840c7?w=500&auto=format&fit=crop',
+            }, 
+            {
+              name: 'Laptop charger',
+              image:
+                'https://media.istockphoto.com/id/605989924/photo/laptop-charger-cable.webp?a=1&b=1&s=612x612&w=0&k=20&c=Ew1PEFBhOnyjQyub5VZqEH4oqEAy5Bqh-3-J3N7Jvj0=',
+            },
+            {
+              name: 'Software CDs',
+              image:
+                'https://media.istockphoto.com/id/529086033/photo/windows-95.jpg?s=612x612&w=0&k=20&c=4x-3Bc0uNWE1F_zQyce7qLt-8UJrptXO4PZg6r6X7aY=',
+            },
+            {
+              name: 'Gaming Console',
+              image:
+                'https://media.istockphoto.com/id/1364374706/photo/joystick-wireless-controller-game-consoles-white-background.jpg?s=612x612&w=0&k=20&c=o-yq8D0i4mlDhsFz3exCZuToh17mkBWhSrFbHiIFLw4=',
+            }
+
           ].map((item, index) => (
             <div
               key={index}
@@ -67,10 +88,12 @@ export default function HomePage() {
               </div>
             </div>
           ))}
-        
-         <p className="mx-auto mt-10 max-w-3xl text-center text-2xl font-bold leading-relaxed tracking-wide text-blue-600">
+           <div className="justify-center ">
+             <p className="mx-auto mt-10 max-w-3xl text-center text-2xl font-bold leading-relaxed tracking-wide text-blue-600">
   AND CALL FOR ANY DEMANDS OF ACCESSORIES OR PRODUCTS RELATED
 </p>
+           </div>
+        
           </div>
 
       {/* Featured Brands */}
@@ -123,15 +146,6 @@ export default function HomePage() {
             productive workspace with premium accessories.
           </p>
 
-          <div className="flex flex-col items-center justify-center gap-5 sm:flex-row">
-            <button className="rounded-2xl bg-blue-600 px-8 py-4 text-lg font-semibold text-white transition hover:bg-blue-700">
-              Shop Accessories
-            </button>
-
-            <button className="rounded-2xl border border-white px-8 py-4 text-lg font-semibold text-white transition hover:bg-white hover:text-black">
-              Learn More
-            </button>
-          </div>
         </div>
       </section>
 
