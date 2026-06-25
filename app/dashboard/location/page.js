@@ -206,7 +206,7 @@ export default function LocationPage() {
   </p>
 
   <a
-    href="https://wa.me/2348131861215?text=Hello%20GloTech,%20I%20would%20like%20to%20make%20an%20enquiry."
+    href="https://wa.me/2348131861215?text=Hello%20Glotech,%20I%20would%20like%20to%20make%20an%20enquiry."
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center rounded-2xl bg-white px-8 py-4 text-lg font-bold text-green-600 shadow-lg transition hover:scale-105 hover:bg-green-50"
