@@ -79,20 +79,29 @@ export default function HomePage() {
               </div>
 
               <div className="p-6">
-                <h3 className="mb-2 text-2xl font-bold">{item.name}</h3>
+  <h3 className="mb-4 text-2xl font-bold">
+    {item.name}
+  </h3>
 
-                <p className="mb-5 text-lg font-semibold text-blue-600">
-                  {item.price}
-                </p>
+  <a
+    href={`https://wa.me/2348068911221?text=${encodeURIComponent(
+      `Hello GloTech,
 
-              </div>
+I'm interested in the ${item.name}.
+
+Is it available? I'd like to know the price and more details.
+
+Thank you.`
+    )}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block w-full rounded-xl bg-green-600 px-5 py-3 text-center font-semibold text-white transition duration-300 hover:bg-green-700 hover:scale-105"
+  >
+    💬 Enquire on WhatsApp
+  </a>
+</div>
             </div>
           ))}
-           <div className="justify-center ">
-             <p className="mx-auto mt-10 max-w-3xl text-center text-2xl font-bold leading-relaxed tracking-wide text-blue-600">
-  AND CALL FOR ANY DEMANDS OF ACCESSORIES OR PRODUCTS RELATED
-</p>
-           </div>
         
           </div>
 
@@ -178,6 +187,32 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      {/* WhatsApp Contact */}
+<section className="mt-20 rounded-3xl bg-gradient-to-r from-green-600 to-green-500 px-6 py-20 text-center text-white shadow-2xl">
+
+  <p className="mb-3 text-lg font-bold uppercase tracking-widest text-green-100">
+    Need Help?
+  </p>
+
+  <h2 className="mb-6 text-4xl font-extrabold md:text-5xl">
+    Chat With Our Team
+  </h2>
+
+  <p className="mx-auto mb-10 max-w-3xl text-lg text-green-100">
+    Have questions about any computer accessory or can't find the product
+    you're looking for? Our team is ready to help you on WhatsApp.
+  </p>
+
+  <a
+    href="https://wa.me/2348068911221?text=Hello%20GloTech,%20I%20would%20like%20to%20make%20an%20enquiry."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center rounded-2xl bg-white px-8 py-4 text-lg font-bold text-green-700 shadow-lg transition duration-300 hover:scale-105 hover:bg-green-100"
+  >
+    💬 Chat on WhatsApp
+  </a>
+
+</section>
 
 
     </main>

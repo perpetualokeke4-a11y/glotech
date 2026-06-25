@@ -188,28 +188,33 @@ export default function LocationPage() {
 
 </section>
 
-      {/* CONTACT CTA */}
-      <section className="bg-blue-600 px-6 py-20 text-center text-white">
+      {/* WHATSAPP CONTACT */}
+<section className="bg-green-600 px-6 py-20 text-center text-white">
 
-        <p className="mb-4 text-lg font-bold uppercase tracking-widest text-yellow-300">
-          Need Assistance?
-        </p>
+  <p className="mb-4 text-lg font-bold uppercase tracking-widest text-green-200">
+    Need Help?
+  </p>
 
-        <h2 className="mb-6 text-4xl font-extrabold md:text-5xl">
-          Contact Our Support Team Today
-        </h2>
+  <h2 className="mb-6 text-4xl font-extrabold md:text-5xl">
+    Chat With Us On WhatsApp
+  </h2>
 
-        <p className="mx-auto mb-10 max-w-3xl text-lg text-blue-100">
-          We are available to help you choose the best
-          computer accessories and solar solutions.
-        </p>
+  <p className="mx-auto mb-10 max-w-3xl text-lg text-green-100">
+    Have questions about our computer accessories, solar products or
+    installation services? Our team is ready to assist you instantly on
+    WhatsApp.
+  </p>
 
-        <button className="rounded-2xl bg-yellow-400 px-8 py-4 text-lg font-bold text-black transition hover:bg-yellow-300">
-          Contact Us
-        </button>
+  <a
+    href="https://wa.me/2348068911221?text=Hello%20GloTech,%20I%20would%20like%20to%20make%20an%20enquiry."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center rounded-2xl bg-white px-8 py-4 text-lg font-bold text-green-600 shadow-lg transition hover:scale-105 hover:bg-green-50"
+  >
+    💬 Chat on WhatsApp
+  </a>
 
-      </section>
-
+</section>
     </section>
   );
 }

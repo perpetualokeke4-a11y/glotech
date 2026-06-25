@@ -136,9 +136,26 @@ export default function SolarPage() {
               </h3>
 
               {/* DESCRIPTION */}
-              <p className="mb-6 text-center text-gray-600">
-                {item.desc}
-              </p>
+<p className="mb-6 text-center text-gray-600">
+  {item.desc}
+</p>
+
+<a
+  href={`https://wa.me/2348068911221?text=${encodeURIComponent(
+    `Hello GloTech,
+
+I'm interested in your ${item.name}.
+
+Could you please tell me the price, availability, and installation details if applicable?
+
+Thank you.`
+  )}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 block w-full rounded-xl bg-green-600 px-5 py-3 text-center font-semibold text-white transition duration-300 hover:scale-105 hover:bg-green-700"
+>
+  💬 Enquire on WhatsApp
+</a>
             </div>
           ))}
 
@@ -178,6 +195,32 @@ export default function SolarPage() {
 
         </div>
       </section>
+      {/* WhatsApp Contact */}
+<section className="bg-gradient-to-r from-green-600 to-green-500 px-6 py-20 text-center text-white">
+
+  <p className="mb-3 text-lg font-bold uppercase tracking-widest text-green-100">
+    Need Expert Advice?
+  </p>
+
+  <h2 className="mb-6 text-4xl font-extrabold md:text-5xl">
+    Chat With Our Solar Experts
+  </h2>
+
+  <p className="mx-auto mb-10 max-w-3xl text-lg text-green-100">
+    Whether you're planning a home, office, school, or commercial solar installation,
+    our experts are ready to help you choose the right products for your needs.
+  </p>
+
+  <a
+    href="https://wa.me/2348068911221?text=Hello%20GloTech,%20I'm%20interested%20in%20your%20solar%20products.%20Could%20you%20assist%20me?"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center rounded-2xl bg-white px-8 py-4 text-lg font-bold text-green-700 shadow-lg transition duration-300 hover:scale-105 hover:bg-green-100"
+  >
+    ☀️ Chat on WhatsApp
+  </a>
+
+</section>
 
     </section>
   );
