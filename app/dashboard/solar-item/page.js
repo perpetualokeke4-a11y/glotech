@@ -141,7 +141,7 @@ export default function SolarPage() {
 </p>
 
 <a
-  href={`https://wa.me/2348068911221?text=${encodeURIComponent(
+  href={`https://wa.me/2348131861215?text=${encodeURIComponent(
     `Hello GloTech,
 
 I'm interested in your ${item.name}.
@@ -212,7 +212,7 @@ Thank you.`
   </p>
 
   <a
-    href="https://wa.me/2348068911221?text=Hello%20GloTech,%20I'm%20interested%20in%20your%20solar%20products.%20Could%20you%20assist%20me?"
+    href="https://wa.me/2348131861215?text=Hello%20GloTech,%20I'm%20interested%20in%20your%20solar%20products.%20Could%20you%20assist%20me?"
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center rounded-2xl bg-white px-8 py-4 text-lg font-bold text-green-700 shadow-lg transition duration-300 hover:scale-105 hover:bg-green-100"
